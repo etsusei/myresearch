@@ -1,0 +1,6 @@
+{
+    "python": {
+        "entry": "main:app",
+        "framework": "fastapi"
+    }
+}
