@@ -1,0 +1,169 @@
+{
+    "common": {
+        "appTitle": "音乐探索实验",
+        "loading": "加载中...",
+        "submit": "提交",
+        "submitting": "提交中...",
+        "submitSuccess": "提交成功",
+        "submitError": "提交失败",
+        "retry": "重试",
+        "next": "下一步",
+        "back": "返回",
+        "play": "播放",
+        "pause": "暂停",
+        "stop": "停止",
+        "analyze": "分析",
+        "versionA": "版本 A",
+        "versionB": "版本 B"
+    },
+    "welcome": {
+        "title": "欢迎参与音乐探索实验！",
+        "intro": "本实验旨在评估一种基于可视化的音乐发现方式。",
+        "instructions": "操作说明",
+        "step1": "选择一个流派和情感类型，点击\"分析\"",
+        "step2": "图中每个点代表一首歌，相近的点 = 听感相似的歌曲",
+        "step3": "不同颜色代表系统识别出的不同听感分组",
+        "step4": "带标记的点 (C1, C2...) 是每个分组的代表曲，推荐从这里开始探索",
+        "step5": "点击任意点试听 30 秒片段",
+        "step6": "体验版本 A 和 B，并为每个版本打分",
+        "taskRequirement": "任务要求：请至少探索 3 个不同的流派+情感组合",
+        "estimatedTime": "预计用时：10-15 分钟",
+        "start": "开始实验"
+    },
+    "explorer": {
+        "selectGenre": "选择流派",
+        "selectEmotion": "选择情感",
+        "selectVersion": "选择版本",
+        "clusterReps": "聚类代表曲",
+        "nowPlaying": "正在播放",
+        "primaryAxis": "[主成分]",
+        "secondaryAxis": "[副成分]"
+    },
+    "questionnaire": {
+        "rateExperience": "请为该版本的体验评分",
+        "discoverability": "我很容易找到符合预期的音乐",
+        "serendipity": "我发现了意外喜欢的音乐",
+        "coherence": "相邻的歌曲听起来确实相似",
+        "satisfaction": "我对这次探索体验感到满意",
+        "preference": "哪个版本更能帮助你发现音乐？",
+        "preferenceOptions": {
+            "a": "版本 A",
+            "b": "版本 B",
+            "same": "差不多"
+        },
+        "feedback": "请解释你的选择或体验不好的地方",
+        "feedbackPlaceholder": "可选：分享你的想法..."
+    },
+    "axis": {
+        "energy": {
+            "label": "强度",
+            "low": "柔和",
+            "high": "强劲"
+        },
+        "rms": {
+            "label": "响度",
+            "low": "安静",
+            "high": "响亮"
+        },
+        "energy_std": {
+            "label": "动态范围",
+            "low": "平坦",
+            "high": "起伏"
+        },
+        "bpm": {
+            "label": "速度",
+            "low": "慢",
+            "high": "快"
+        },
+        "danceability": {
+            "label": "律动感",
+            "low": "静止",
+            "high": "适合跳舞"
+        },
+        "beats_loudness": {
+            "label": "节拍强度",
+            "low": "弱",
+            "high": "强"
+        },
+        "onset_rate": {
+            "label": "音符密度",
+            "low": "稀疏",
+            "high": "密集"
+        },
+        "spectral_centroid": {
+            "label": "明亮度",
+            "low": "暗沉",
+            "high": "明亮"
+        },
+        "hfc": {
+            "label": "高频",
+            "low": "沉闷",
+            "high": "清脆"
+        },
+        "spectral_rolloff": {
+            "label": "锐度",
+            "low": "温暖",
+            "high": "尖锐"
+        },
+        "spectral_flux": {
+            "label": "音色变化",
+            "low": "稳定",
+            "high": "多变"
+        },
+        "spectral_entropy": {
+            "label": "配器复杂度",
+            "low": "简单",
+            "high": "复杂"
+        },
+        "spectral_flatness_db": {
+            "label": "声音质感",
+            "low": "纯净",
+            "high": "嘈杂"
+        },
+        "dissonance": {
+            "label": "紧张感",
+            "low": "和谐",
+            "high": "不和谐"
+        },
+        "key_strength": {
+            "label": "调性清晰度",
+            "low": "模糊",
+            "high": "清晰"
+        }
+    },
+    "genres": {
+        "POP": "流行",
+        "Rock/Metal": "摇滚/金属",
+        "Electronic": "电子",
+        "OST": "原声带",
+        "Rap/Hip-Hop": "说唱/嘻哈",
+        "R&B/Soul": "R&B/灵魂",
+        "EDM": "电子舞曲",
+        "Jazz": "爵士",
+        "Folk/Blues/Country": "民谣/布鲁斯/乡村",
+        "J-POP": "日本流行",
+        "New Age": "新世纪",
+        "Classic": "古典",
+        "Idol": "偶像",
+        "World Music": "世界音乐"
+    },
+    "emotions": {
+        "Healing": "治愈",
+        "Nostalgia": "怀旧",
+        "Excitement": "兴奋",
+        "Sadness": "悲伤",
+        "Romantic": "浪漫",
+        "Quiet": "安静",
+        "Happiness": "快乐",
+        "Loneliness": "孤独",
+        "Touching": "感动",
+        "Missing": "思念",
+        "Fresh": "清新",
+        "Relaxation": "放松"
+    },
+    "completion": {
+        "title": "感谢参与！",
+        "message": "您的回答已成功提交。",
+        "close": "关闭"
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "common": {
+        "appTitle": "Music Exploration Experiment",
+        "loading": "Loading...",
+        "submit": "Submit",
+        "submitting": "Submitting...",
+        "submitSuccess": "Submitted Successfully",
+        "submitError": "Submit Failed",
+        "retry": "Retry",
+        "next": "Next",
+        "back": "Back",
+        "play": "Play",
+        "pause": "Pause",
+        "stop": "Stop",
+        "analyze": "Analyze",
+        "versionA": "Version A",
+        "versionB": "Version B"
+    },
+    "welcome": {
+        "title": "Welcome to the Music Exploration Experiment!",
+        "intro": "This experiment evaluates a visualization-based music discovery approach.",
+        "instructions": "Instructions",
+        "step1": "Select a genre and emotion, then click \"Analyze\"",
+        "step2": "Each point represents a song. Nearby points = similar sounding songs",
+        "step3": "Different colors indicate different listening experience clusters",
+        "step4": "Marked points (C1, C2...) are representative songs of each cluster - start exploring from here",
+        "step5": "Click any point to preview a 30-second clip",
+        "step6": "Experience versions A and B, and rate each",
+        "taskRequirement": "Task requirement: Please explore at least 3 different genre+emotion combinations",
+        "estimatedTime": "Estimated time: 10-15 minutes",
+        "start": "Start Experiment"
+    },
+    "explorer": {
+        "selectGenre": "Select Genre",
+        "selectEmotion": "Select Emotion",
+        "selectVersion": "Select Version",
+        "clusterReps": "Cluster Representatives",
+        "nowPlaying": "Now Playing",
+        "primaryAxis": "[Primary]",
+        "secondaryAxis": "[Secondary]"
+    },
+    "questionnaire": {
+        "rateExperience": "Rate your experience with this version",
+        "discoverability": "I easily found music that matched my expectations",
+        "serendipity": "I discovered unexpected music that I liked",
+        "coherence": "Nearby songs sounded similar to each other",
+        "satisfaction": "I am satisfied with my exploration experience",
+        "preference": "Which version helped you discover music better?",
+        "preferenceOptions": {
+            "a": "Version A",
+            "b": "Version B",
+            "same": "About the same"
+        },
+        "feedback": "Please explain your choice or describe any issues",
+        "feedbackPlaceholder": "Optional: Share your thoughts..."
+    },
+    "axis": {
+        "energy": {
+            "label": "Intensity",
+            "low": "Soft",
+            "high": "Powerful"
+        },
+        "rms": {
+            "label": "Loudness",
+            "low": "Quiet",
+            "high": "Loud"
+        },
+        "energy_std": {
+            "label": "Dynamic Range",
+            "low": "Flat",
+            "high": "Dynamic"
+        },
+        "bpm": {
+            "label": "Tempo",
+            "low": "Slow",
+            "high": "Fast"
+        },
+        "danceability": {
+            "label": "Groove",
+            "low": "Still",
+            "high": "Danceable"
+        },
+        "beats_loudness": {
+            "label": "Beat Strength",
+            "low": "Weak",
+            "high": "Strong"
+        },
+        "onset_rate": {
+            "label": "Note Density",
+            "low": "Sparse",
+            "high": "Dense"
+        },
+        "spectral_centroid": {
+            "label": "Brightness",
+            "low": "Dark",
+            "high": "Bright"
+        },
+        "hfc": {
+            "label": "High-Frequency",
+            "low": "Muffled",
+            "high": "Crisp"
+        },
+        "spectral_rolloff": {
+            "label": "Sharpness",
+            "low": "Warm",
+            "high": "Sharp"
+        },
+        "spectral_flux": {
+            "label": "Timbre Variation",
+            "low": "Stable",
+            "high": "Varying"
+        },
+        "spectral_entropy": {
+            "label": "Instrumentation",
+            "low": "Simple",
+            "high": "Complex"
+        },
+        "spectral_flatness_db": {
+            "label": "Sound Texture",
+            "low": "Pure",
+            "high": "Noisy"
+        },
+        "dissonance": {
+            "label": "Tension",
+            "low": "Consonant",
+            "high": "Dissonant"
+        },
+        "key_strength": {
+            "label": "Tonal Clarity",
+            "low": "Ambiguous",
+            "high": "Clear"
+        }
+    },
+    "genres": {
+        "POP": "Pop",
+        "Rock/Metal": "Rock/Metal",
+        "Electronic": "Electronic",
+        "OST": "Soundtrack",
+        "Rap/Hip-Hop": "Rap/Hip-Hop",
+        "R&B/Soul": "R&B/Soul",
+        "EDM": "EDM",
+        "Jazz": "Jazz",
+        "Folk/Blues/Country": "Folk/Blues/Country",
+        "J-POP": "J-Pop",
+        "New Age": "New Age",
+        "Classic": "Classical",
+        "Idol": "Idol",
+        "World Music": "World Music"
+    },
+    "emotions": {
+        "Healing": "Healing",
+        "Nostalgia": "Nostalgia",
+        "Excitement": "Excitement",
+        "Sadness": "Sadness",
+        "Romantic": "Romantic",
+        "Quiet": "Quiet",
+        "Happiness": "Happiness",
+        "Loneliness": "Loneliness",
+        "Touching": "Touching",
+        "Missing": "Missing",
+        "Fresh": "Fresh",
+        "Relaxation": "Relaxation"
+    },
+    "completion": {
+        "title": "Thank You!",
+        "message": "Your responses have been submitted successfully.",
+        "close": "Close"
+    }
+}

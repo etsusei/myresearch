@@ -1,0 +1,169 @@
+{
+    "common": {
+        "appTitle": "音楽探索実験",
+        "loading": "読み込み中...",
+        "submit": "送信",
+        "submitting": "送信中...",
+        "submitSuccess": "送信完了",
+        "submitError": "送信失敗",
+        "retry": "再試行",
+        "next": "次へ",
+        "back": "戻る",
+        "play": "再生",
+        "pause": "一時停止",
+        "stop": "停止",
+        "analyze": "分析",
+        "versionA": "バージョン A",
+        "versionB": "バージョン B"
+    },
+    "welcome": {
+        "title": "音楽探索実験へようこそ！",
+        "intro": "この実験は、可視化ベースの音楽発見アプローチを評価します。",
+        "instructions": "操作方法",
+        "step1": "ジャンルと感情を選択し、「分析」をクリック",
+        "step2": "各点は1曲を表します。近い点 = 似た曲調",
+        "step3": "異なる色は異なるリスニング体験のグループを示します",
+        "step4": "マーク付きの点 (C1, C2...) は各グループの代表曲です。ここから探索を始めましょう",
+        "step5": "任意の点をクリックして30秒試聴",
+        "step6": "バージョン A と B を体験し、それぞれ評価してください",
+        "taskRequirement": "タスク要件：少なくとも3つの異なるジャンル+感情の組み合わせを探索してください",
+        "estimatedTime": "所要時間：10-15分",
+        "start": "実験を開始"
+    },
+    "explorer": {
+        "selectGenre": "ジャンルを選択",
+        "selectEmotion": "感情を選択",
+        "selectVersion": "バージョンを選択",
+        "clusterReps": "クラスタ代表曲",
+        "nowPlaying": "再生中",
+        "primaryAxis": "[主成分]",
+        "secondaryAxis": "[副成分]"
+    },
+    "questionnaire": {
+        "rateExperience": "このバージョンの体験を評価してください",
+        "discoverability": "期待通りの音楽を簡単に見つけられた",
+        "serendipity": "思いがけず好きな音楽を発見した",
+        "coherence": "近くの曲は実際に似ていると感じた",
+        "satisfaction": "この探索体験に満足している",
+        "preference": "どちらのバージョンが音楽発見に役立ちましたか？",
+        "preferenceOptions": {
+            "a": "バージョン A",
+            "b": "バージョン B",
+            "same": "どちらも同じくらい"
+        },
+        "feedback": "選択の理由や改善点を教えてください",
+        "feedbackPlaceholder": "任意：ご意見をお聞かせください..."
+    },
+    "axis": {
+        "energy": {
+            "label": "強度",
+            "low": "ソフト",
+            "high": "パワフル"
+        },
+        "rms": {
+            "label": "音量",
+            "low": "静か",
+            "high": "大きい"
+        },
+        "energy_std": {
+            "label": "ダイナミクス",
+            "low": "平坦",
+            "high": "ダイナミック"
+        },
+        "bpm": {
+            "label": "テンポ",
+            "low": "遅い",
+            "high": "速い"
+        },
+        "danceability": {
+            "label": "グルーヴ",
+            "low": "静か",
+            "high": "ダンサブル"
+        },
+        "beats_loudness": {
+            "label": "ビート強度",
+            "low": "弱い",
+            "high": "強い"
+        },
+        "onset_rate": {
+            "label": "音符密度",
+            "low": "疎",
+            "high": "密"
+        },
+        "spectral_centroid": {
+            "label": "明るさ",
+            "low": "暗い",
+            "high": "明るい"
+        },
+        "hfc": {
+            "label": "高周波",
+            "low": "こもった",
+            "high": "クリア"
+        },
+        "spectral_rolloff": {
+            "label": "シャープさ",
+            "low": "温かい",
+            "high": "鋭い"
+        },
+        "spectral_flux": {
+            "label": "音色変化",
+            "low": "安定",
+            "high": "変化"
+        },
+        "spectral_entropy": {
+            "label": "楽器構成",
+            "low": "シンプル",
+            "high": "複雑"
+        },
+        "spectral_flatness_db": {
+            "label": "音質感",
+            "low": "純粋",
+            "high": "ノイジー"
+        },
+        "dissonance": {
+            "label": "緊張感",
+            "low": "協和",
+            "high": "不協和"
+        },
+        "key_strength": {
+            "label": "調性の明確さ",
+            "low": "曖昧",
+            "high": "明確"
+        }
+    },
+    "genres": {
+        "POP": "ポップ",
+        "Rock/Metal": "ロック/メタル",
+        "Electronic": "エレクトロニック",
+        "OST": "サウンドトラック",
+        "Rap/Hip-Hop": "ラップ/ヒップホップ",
+        "R&B/Soul": "R&B/ソウル",
+        "EDM": "EDM",
+        "Jazz": "ジャズ",
+        "Folk/Blues/Country": "フォーク/ブルース/カントリー",
+        "J-POP": "J-POP",
+        "New Age": "ニューエイジ",
+        "Classic": "クラシック",
+        "Idol": "アイドル",
+        "World Music": "ワールドミュージック"
+    },
+    "emotions": {
+        "Healing": "癒し",
+        "Nostalgia": "懐かしさ",
+        "Excitement": "興奮",
+        "Sadness": "悲しみ",
+        "Romantic": "ロマンチック",
+        "Quiet": "静けさ",
+        "Happiness": "幸せ",
+        "Loneliness": "孤独",
+        "Touching": "感動",
+        "Missing": "切なさ",
+        "Fresh": "爽やか",
+        "Relaxation": "リラックス"
+    },
+    "completion": {
+        "title": "ご協力ありがとうございました！",
+        "message": "回答が正常に送信されました。",
+        "close": "閉じる"
+    }
+}
