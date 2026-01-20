@@ -499,6 +499,10 @@ if os.path.exists(DIST_DIR):
 @app.get("/{full_path:path}")
 async def serve_spa(full_path: str):
     """Serve Vue SPA for all non-API routes"""
+    # Skip API routes - they should be handled by their own endpoints
+    if full_path.startswith("api/") or full_path.startswith("song/"):
+        raise HTTPException(status_code=404, detail="API endpoint not found")
+    
     index_path = os.path.join(DIST_DIR, "index.html")
     if os.path.exists(index_path):
         return FileResponse(index_path)
