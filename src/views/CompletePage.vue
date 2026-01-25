@@ -5,7 +5,16 @@
       <h1 class="complete-title">{{ t('completion.title') }}</h1>
       <p class="complete-message">{{ t('completion.message') }}</p>
       
-      <button class="btn btn-secondary" @click="closeWindow">
+      <!-- Download Section -->
+      <div class="download-section">
+        <p class="download-prompt">{{ t('completion.downloadPrompt') }}</p>
+        <p class="email-address">your-email@example.com</p>
+        <button class="btn btn-primary download-btn" @click="downloadData">
+          📥 {{ t('completion.downloadButton') }}
+        </button>
+      </div>
+      
+      <button class="btn btn-secondary mt-2" @click="closeWindow">
         {{ t('completion.close') }}
       </button>
     </div>
@@ -14,8 +23,14 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { useSessionStore } from '../stores/session'
 
 const { t } = useI18n()
+const session = useSessionStore()
+
+function downloadData() {
+  session.downloadSessionData()
+}
 
 function closeWindow() {
   window.close()
@@ -33,6 +48,7 @@ function closeWindow() {
 
 .complete-container {
   text-align: center;
+  max-width: 500px;
 }
 
 .success-icon {
@@ -62,5 +78,36 @@ function closeWindow() {
 .complete-message {
   color: var(--text-secondary);
   margin-bottom: 2rem;
+}
+
+.download-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.download-prompt {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.email-address {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
 }
 </style>

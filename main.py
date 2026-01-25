@@ -136,6 +136,10 @@ class AnalysisRequest(BaseModel):
     auto_k: bool = True
     manual_k: int = 3
 
+class CheckRequest(BaseModel):
+    genre: str
+    emotion: str
+
 class SubmitRequest(BaseModel):
     session_data: Dict[str, Any]
 
@@ -347,6 +351,31 @@ async def get_info():
     return {
         'genres': list(genres),
         'emotions': sorted(all_emotions)
+    }
+
+@app.post("/api/check")
+async def check_availability(req: CheckRequest):
+    """Check if data is sufficient for both versions"""
+    if not data_store.loaded:
+        raise HTTPException(status_code=500, detail="Data not loaded")
+    
+    # Check GT
+    gt_filtered = filter_data(data_store.gt_data, req.genre, req.emotion)
+    gt_count = len(gt_filtered['embeddings'])
+    
+    # Check Pred
+    pred_filtered = filter_data(data_store.pred_data, req.genre, req.emotion)
+    pred_count = len(pred_filtered['embeddings'])
+    
+    min_required = 3
+    valid = (gt_count >= min_required) and (pred_count >= min_required)
+    
+    return {
+        'valid': valid,
+        'counts': {
+            'GT': gt_count,
+            'Pred': pred_count
+        }
     }
 
 @app.post("/api/analyze")

@@ -41,6 +41,12 @@ const session = useSessionStore()
 function startExperiment() {
   // Initialize session
   session.initSession()
+  
+  // Set initial Wizard state
+  session.taskStep = 'guided_A'
+  session.currentTaskType = 'guided'
+  session.currentVersion = 'A'
+  
   router.push('/explore')
 }
 </script>

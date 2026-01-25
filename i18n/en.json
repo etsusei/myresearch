@@ -13,6 +13,8 @@
         "pause": "Pause",
         "stop": "Stop",
         "analyze": "Analyze",
+        "total": "Total",
+        "songs": "songs",
         "versionA": "Version A",
         "versionB": "Version B"
     },
@@ -30,21 +32,24 @@
         "estimatedTime": "Estimated time: 10-15 minutes",
         "start": "Start Experiment"
     },
+    "transition": {
+        "title": "Stage 2: Free Exploration",
+        "intro": "Great! You've completed the guided task.",
+        "step1": "Now, please feel free to select <b>any</b> Genre and Emotion you like.",
+        "start": "Start Exploring"
+    },
     "explorer": {
         "selectGenre": "Select Genre",
         "selectEmotion": "Select Emotion",
         "selectVersion": "Select Version",
         "clusterReps": "Cluster Representatives",
         "nowPlaying": "Now Playing",
+        "clickToPlay": "Click any point to play",
         "primaryAxis": "[Primary]",
         "secondaryAxis": "[Secondary]"
     },
     "questionnaire": {
         "rateExperience": "Rate your experience with this version",
-        "discoverability": "I easily found music that matched my expectations",
-        "serendipity": "I discovered unexpected music that I liked",
-        "coherence": "Nearby songs sounded similar to each other",
-        "satisfaction": "I am satisfied with my exploration experience",
         "preference": "Which version helped you discover music better?",
         "preferenceOptions": {
             "a": "Version A",
@@ -164,6 +169,43 @@
     "completion": {
         "title": "Thank You!",
         "message": "Your responses have been submitted successfully.",
-        "close": "Close"
+        "close": "Close",
+        "downloadPrompt": "Please download the data file and send it to",
+        "downloadButton": "Download Data"
+    },
+    "task": {
+        "guidedInstruction": "Follow the axis labels and try to find a path from one end of the map to the other. Notice how the music style changes along the way.",
+        "freeExploreInstruction": "Freely explore the map and find 2-3 songs you like. Click the ❤️ button to mark your favorites.",
+        "progress": {
+            "listened": "Listened: {count} songs",
+            "liked": "Liked: {count}/{total}",
+            "minRequired": "Please listen to at least {min} songs before continuing"
+        }
+    },
+    "newQuestions": {
+        "genreEmotionMatch": "Do the songs in this map generally match the \"{genre} + {emotion}\" style?",
+        "genreEmotionMatchFree": "Do the songs in this map generally match the style of the target genre and emotion combination?",
+        "discoverability": "It was easy to find music that matched my expectations",
+        "serendipity": "I discovered music I liked unexpectedly",
+        "coherence": "Nearby songs actually sounded similar",
+        "satisfaction": "I am satisfied with this exploration experience",
+        "transitionNatural": "Was the transition from one end to the other natural and smooth?",
+        "hasJump": "Were there any noticeable jumps or gaps during the transition?",
+        "axisUnderstandable": "Were the axis labels easy to understand?",
+        "axisNavigation": "Did the axis labels help you navigate?",
+        "clusterDistinct": "Did the ★ representative songs of different color clusters sound distinctly different?",
+        "easierToFind": "Which version made it easier to find songs you like?",
+        "betterAxisLabels": "Which version had more accurate axis labels?",
+        "betterLayout": "Which version's layout better matched your listening perception?",
+        "overallPreference": "Overall, which version do you prefer?",
+        "explainChoice": "Please explain your choice"
+    },
+    "ui": {
+        "loadingMusic": "Loading music...",
+        "loadFailed": "Loading failed. Please try again.",
+        "insufficientSongs": "Not enough songs in this combination. Please try another.",
+        "guidedTask": "Guided Task",
+        "freeExplore": "Free Exploration",
+        "resetZoom": "Reset"
     }
 }

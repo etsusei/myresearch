@@ -13,6 +13,8 @@
         "pause": "暂停",
         "stop": "停止",
         "analyze": "分析",
+        "total": "总计",
+        "songs": "首",
         "versionA": "版本 A",
         "versionB": "版本 B"
     },
@@ -30,21 +32,24 @@
         "estimatedTime": "预计用时：10-15 分钟",
         "start": "开始实验"
     },
+    "transition": {
+        "title": "第二阶段：自由探索",
+        "intro": "太棒了！你已经完成了引导任务。",
+        "step1": "现在，请随意选择<b>任意</b>你喜欢的流派和情感。",
+        "start": "开始探索"
+    },
     "explorer": {
         "selectGenre": "选择流派",
         "selectEmotion": "选择情感",
         "selectVersion": "选择版本",
         "clusterReps": "聚类代表曲",
         "nowPlaying": "正在播放",
+        "clickToPlay": "点击任意点播放",
         "primaryAxis": "[主成分]",
         "secondaryAxis": "[副成分]"
     },
     "questionnaire": {
         "rateExperience": "请为该版本的体验评分",
-        "discoverability": "我很容易找到符合预期的音乐",
-        "serendipity": "我发现了意外喜欢的音乐",
-        "coherence": "相邻的歌曲听起来确实相似",
-        "satisfaction": "我对这次探索体验感到满意",
         "preference": "哪个版本更能帮助你发现音乐？",
         "preferenceOptions": {
             "a": "版本 A",
@@ -164,6 +169,43 @@
     "completion": {
         "title": "感谢参与！",
         "message": "您的回答已成功提交。",
-        "close": "关闭"
+        "close": "关闭",
+        "downloadPrompt": "请下载数据文件并发送至",
+        "downloadButton": "下载数据"
+    },
+    "task": {
+        "guidedInstruction": "请参考坐标轴的提示，尝试从地图的一端开始，寻找一条路径，逐渐过渡到另一端。感受音乐风格在过程中的变化。",
+        "freeExploreInstruction": "请在当前地图中自由探索，找到 2-3 首你觉得好听的歌曲。点击 ❤️ 按钮标记你喜欢的歌曲。",
+        "progress": {
+            "listened": "已试听: {count} 首",
+            "liked": "已喜欢: {count}/{total}",
+            "minRequired": "请至少试听 {min} 首歌曲后再继续"
+        }
+    },
+    "newQuestions": {
+        "genreEmotionMatch": "这个地图中的歌曲，整体上是否符合\"{genre} + {emotion}\"的风格？",
+        "genreEmotionMatchFree": "这个地图中的歌曲，整体上是否符合目标流派情感组合的风格？",
+        "discoverability": "我很容易找到符合预期的音乐",
+        "serendipity": "我发现了意外喜欢的音乐",
+        "coherence": "相邻的歌曲听起来确实相似",
+        "satisfaction": "我对这次探索体验感到满意",
+        "transitionNatural": "从一端过渡到另一端时，音乐风格的变化是否自然流畅？",
+        "hasJump": "过渡过程中是否有感觉明显跳跃/断层的地方？",
+        "axisUnderstandable": "坐标轴上的文字标签是否容易理解？",
+        "axisNavigation": "坐标轴的文字提示是否帮助你导航？",
+        "clusterDistinct": "不同颜色分组的★代表歌曲，听起来是否有明显的风格差异？",
+        "easierToFind": "哪个版本更容易找到你喜欢的歌曲？",
+        "betterAxisLabels": "哪个版本的坐标轴提示更准确？",
+        "betterLayout": "哪个版本的地图布局更符合你的听感？",
+        "overallPreference": "整体来说，你更喜欢哪个版本？",
+        "explainChoice": "请解释你的选择"
+    },
+    "ui": {
+        "loadingMusic": "音乐加载中...",
+        "loadFailed": "加载失败，请重试",
+        "insufficientSongs": "该组合歌曲数量不足，请选择其他组合",
+        "guidedTask": "引导任务",
+        "freeExplore": "自由探索",
+        "resetZoom": "重置"
     }
 }

@@ -13,6 +13,8 @@
         "pause": "一時停止",
         "stop": "停止",
         "analyze": "分析",
+        "total": "合計",
+        "songs": "曲",
         "versionA": "バージョン A",
         "versionB": "バージョン B"
     },
@@ -30,21 +32,24 @@
         "estimatedTime": "所要時間：10-15分",
         "start": "実験を開始"
     },
+    "transition": {
+        "title": "ステージ2：自由探索",
+        "intro": "素晴らしい！ガイド付きタスクが完了しました。",
+        "step1": "次は、好きなジャンルと感情を<b>自由</b>に選択してください。",
+        "start": "探索を開始"
+    },
     "explorer": {
         "selectGenre": "ジャンルを選択",
         "selectEmotion": "感情を選択",
         "selectVersion": "バージョンを選択",
         "clusterReps": "クラスタ代表曲",
         "nowPlaying": "再生中",
+        "clickToPlay": "任意の点をクリックして再生",
         "primaryAxis": "[主成分]",
         "secondaryAxis": "[副成分]"
     },
     "questionnaire": {
         "rateExperience": "このバージョンの体験を評価してください",
-        "discoverability": "期待通りの音楽を簡単に見つけられた",
-        "serendipity": "思いがけず好きな音楽を発見した",
-        "coherence": "近くの曲は実際に似ていると感じた",
-        "satisfaction": "この探索体験に満足している",
         "preference": "どちらのバージョンが音楽発見に役立ちましたか？",
         "preferenceOptions": {
             "a": "バージョン A",
@@ -164,6 +169,43 @@
     "completion": {
         "title": "ご協力ありがとうございました！",
         "message": "回答が正常に送信されました。",
-        "close": "閉じる"
+        "close": "閉じる",
+        "downloadPrompt": "データファイルをダウンロードして次のアドレスに送信してください",
+        "downloadButton": "データをダウンロード"
+    },
+    "task": {
+        "guidedInstruction": "軸のラベルを参考に、マップの一端から他端へ至る経路を探してみてください。途中で音楽スタイルがどのように変化するか感じてください。",
+        "freeExploreInstruction": "マップを自由に探索し、気に入った曲を2〜3曲見つけてください。❤️ボタンをクリックしてお気に入りを登録してください。",
+        "progress": {
+            "listened": "試聴済み: {count} 曲",
+            "liked": "お気に入り: {count}/{total}",
+            "minRequired": "続行する前に少なくとも {min} 曲を試聴してください"
+        }
+    },
+    "newQuestions": {
+        "genreEmotionMatch": "このマップの曲は全体的に「{genre} + {emotion}」のスタイルに合っていますか？",
+        "genreEmotionMatchFree": "このマップの曲は全体的に、ターゲットとなるジャンルと感情の組み合わせのスタイルに合っていますか？",
+        "discoverability": "期待通りの音楽を簡単に見つけることができた",
+        "serendipity": "思いがけず好きな音楽を発見できた",
+        "coherence": "隣接する曲は実際に似ているように聞こえた",
+        "satisfaction": "この探索体験に満足している",
+        "transitionNatural": "一端から他端への音楽スタイルの変化は自然でスムーズでしたか？",
+        "hasJump": "過渡中に明らかな飛躍や断層を感じましたか？",
+        "axisUnderstandable": "軸のラベルはわかりやすかったですか？",
+        "axisNavigation": "軸のラベルはナビゲーションに役立ちましたか？",
+        "clusterDistinct": "異なる色のクラスターの★代表曲は、明らかにスタイルが異なりましたか？",
+        "easierToFind": "どちらのバージョンの方が好きな曲を見つけやすかったですか？",
+        "betterAxisLabels": "どちらのバージョンの軸ラベルがより正確でしたか？",
+        "betterLayout": "どちらのバージョンのレイアウトがあなたの聴覚体験により合っていましたか？",
+        "overallPreference": "全体的に、どちらのバージョンが好みですか？",
+        "explainChoice": "選択の理由を教えてください"
+    },
+    "ui": {
+        "loadingMusic": "音楽を読み込み中...",
+        "loadFailed": "読み込みに失敗しました。再試行してください。",
+        "insufficientSongs": "この組み合わせの曲数が不足しています。別の組み合わせを選択してください。",
+        "guidedTask": "ガイド付きタスク",
+        "freeExplore": "自由探索",
+        "resetZoom": "リセット"
     }
 }
